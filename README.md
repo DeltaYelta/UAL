@@ -1,5 +1,7 @@
 # UAL
 User-defined Assembly Language
+This program implements a CPU of the UAL architechure, which allows users to create their own assembly language  
+from a small set of 8 machine instructions.  
 # Notes
 The machine has 3 registers A, B, and C which hold 1 byte of data each.  
 They are all initialized to 0x00, but this may vary between implementations.  
