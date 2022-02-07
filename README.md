@@ -1,9 +1,10 @@
-# PSC
-Programmable Specification written in C
+# UAL
+User-defined Assembly Language
 # Notes
 The machine has 3 registers A, B, and C which hold 1 byte of data each.  
 They are all initialized to 0x00, but this may vary between implementations.  
 The machine also has 2 flags, C and Z, for carry and zero, respectively.
+The instruction 0x07 0x07 is equivalent to a NOP in other architectures.
 # Machine instructions
 The machine offers 8 instructions which should (hopefully) prove to be Turing-complete.  
 0x00 MVA x: Moves x into A.  
