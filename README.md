@@ -15,8 +15,9 @@ The machine offers
 The first byte of any PSC program is used to store the beginning address of assembly code.  
 After this and until the first address is the assembly specification where each instruction definition is as such:  
 (number of mcn instructions including arguments) (instruction identifier) (mcn instructions)  
-<h2>Example instruction definition</h2>  
-(whitespace and prefixes added for readability)  
+
+# Example instruction definition
+(whitespace and prefixes added for readability.)   
 0x00 0x1F 0x01 0x00 0x02  
 This defines an instruction 1F which SWP's and then ADD's.  
 
