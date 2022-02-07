@@ -1,5 +1,5 @@
 # UAL
-User-defined Assembly Language
+User-defined Assembly Language  
 This program implements a CPU of the UAL architechure, which allows users to create their own assembly language
 from a small set of 8 machine instructions.  
 # Notes
