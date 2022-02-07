@@ -5,7 +5,7 @@ The machine has 3 registers A, B, and C which hold 1 byte of data each.
 They are all initialized to 0x00, but this may vary between implementations.  
 The machine also has 2 flags, C and Z, for carry and zero, respectively.
 # Machine instructions
-The machine offers 8 instructions which should (hopefully) prove to be Turing-complete.
+The machine offers 8 instructions which should (hopefully) prove to be Turing-complete.  
 0x00 MVA x: Moves x into A.  
 0x01 SWP x: Swaps A with B if x is 0 or A with C if x is greater than 0.  
 0x02 ADD: Adds B and C and stores the result in A, if the result overflows, the carry flag is set and A is set to 0xFF.  
