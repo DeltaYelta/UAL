@@ -25,6 +25,6 @@ After this and until the first address is the assembly specification where each 
 
 # Example instruction definition
 (whitespace and prefixes added for readability.)   
-0x02 0xFF 0x07 0x07  
+0xFF 0x07 0x07  
 This defines an instruction 0xFF to run 0x07 0x07, effectively a NOP.  
 # Example program
