@@ -1,6 +1,8 @@
 #ifndef _PARSE_H
 #define _PARSE_H
+#include "instruction.h"
 
-int parse(uint8_t buf[]);
+Instruction* defreader(uint8_t def[]);
+int parse(Instruction def[], uint8_t ram[], uint8_t rgf[]);
 
 #endif

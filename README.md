@@ -13,15 +13,15 @@ The machine offers 8 instructions which should (hopefully) prove to be Turing-co
 0x01 SWP x: Swaps A with B if x is 0 or A with C if x is greater than 0.  
 0x02 ADD x: Adds B and C and stores the result in A (x has no effect.)  
 0x03 SUB x: Subtracts B from C and stores the result in A, if the result is zero or underflows, the Z flag is set and A is set to 0x00 (x has no effect.)  
-0x04 JMP x: Jumps unconditionally to relative address x.  
-0x05 JPZ x: Jumps to relative address x if the Z flag is not set.  
+0x04 JMP x: Jumps unconditionally to relative(!) address x.  
+0x05 JPZ x: Jumps to relative address x if the Z flag is set.  
 0x06 MAR x: Moves A into address x.  
 0x07 EXC x: Executes instruction x (machine or assembly.)  
 
 # Program layout
-The first byte of any UAL program is used to store the beginning address of UAL assembly.  
-After this and until the first address is the assembly specification where each instruction definition is as such:  
-(number of mcn instructions including arguments) (instruction identifier) (mcn instructions)  
+The first byte of any UAL program is used to store the beginning address of UAL machine instructions.  
+After this and until that address is the assembly specification where each instruction definition is as such:  
+(length of the definition) (instruction identifier) (mcn instructions)  
 
 # Example instruction definition
 (whitespace and prefixes added for readability.)   

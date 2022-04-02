@@ -6,9 +6,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-struct Instruction {
+typedef struct {
 	uint8_t id;
 	uint8_t arg;
 	uint8_t def[];
-};
+} Instruction;
 #endif

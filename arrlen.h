@@ -8,7 +8,7 @@
 
 
 int arrlen(void *arr[]) {
-    size_t len = 0;
+    int len = 0;
     while (arr[len]) {
         len++;
     }
